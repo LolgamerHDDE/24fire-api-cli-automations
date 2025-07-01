@@ -1,0 +1,9 @@
+# 24Fire API Configuration
+api_key: "YOUR_API_KEY_HERE"
+internal_id: "YOUR_INTERNAL_ID_HERE"
+discord_webhook_url: "YOUR_DISCORD_WEBHOOK_URL_HERE"
+
+# Server Configuration
+host: "0.0.0.0"
+port: 62599
+log_level: "INFO"
