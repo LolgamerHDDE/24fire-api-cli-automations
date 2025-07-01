@@ -25,11 +25,11 @@ print_error() {
 }
 
 # Check if running as root
-if [[ $EUID -eq 0 ]]; then
-   print_error "This script should not be run as root for security reasons"
-   echo "Please run as a regular user with sudo privileges"
-   exit 1
-fi
+#if [[ $EUID -eq 0 ]]; then
+#   print_error "This script should not be run as root for security reasons"
+#   echo "Please run as a regular user with sudo privileges"
+#   exit 1
+#fi
 
 # Check if sudo is available
 if ! command -v sudo &> /dev/null; then
