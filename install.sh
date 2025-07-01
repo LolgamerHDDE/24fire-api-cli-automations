@@ -270,7 +270,7 @@ case "$1" in
         else
             cd $APP_DIR
             source venv/bin/activate
-            nohup python main.py > /tmp/24fire-automation.log 2>&1 &
+            screen python main.py > /tmp/24fire-automation.log 2>&1 &
             echo $! > /tmp/24fire-automation.pid
             echo "Started with PID: $(cat /tmp/24fire-automation.pid)"
         fi
